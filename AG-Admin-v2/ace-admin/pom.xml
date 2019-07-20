@@ -185,7 +185,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <!-- docker 插件 -->
-            <plugin>
+            <!--  <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>${docker.plugin.version}</version>
@@ -208,7 +208,7 @@
                         </resource>
                     </resources>
                 </configuration>
-            </plugin>
+            </plugin> -->
             <!-- zip 压缩 -->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>

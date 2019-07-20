@@ -62,15 +62,19 @@ eureka:
                     # docker 部署开启
 #            defaultZone: http://center:8761/eureka/
 
-#gate:
-#  ignore:
-#    startWith: /static
-#    contain: .
-#  oauth:
-#    prefix: /api
-#
-#  jwt:
-#    secret: Xe*g@1jda
-#    expiration: 7200
-#    header: Authorization
-#    prefix: bearer
+gate:
+  ignore:
+    startWith: /static
+    contain: .
+  oauth:
+    prefix: /api
+
+  jwt:
+    secret: Xe*g@1jda
+    expiration: 7200
+    header: access-token
+    prefix: bearer
+
+logging:
+  level:
+    root: debug
